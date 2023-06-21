@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generate Gmail Aliases</title>
+</head>
+<body>
+    <h2>Generate Gmail Aliases</h2>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <button id="generate-button">Generate</button>
+    <div>
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+        <p id="result4"></p>
+        <p id="result5"></p>
+    </div>
+    <h3>Instructions:</h3>
+    <p>Enter a gmail address in the box above (including @gmail.com) and click 'Generate', this will produce 5 aliases for that email address by randomly placing periods in there before the @. Keep pressing the button to get more aliases</p>
+    <h3>When is this useful?</h3>
+    <p>This is useful any time you need a 'unique' email, but don't want to create a whole new email address, for example:
+    </p>
+    <ul>
+        <li>Testing - need 100 fresh emails to test the new account creation journey on your app? Use some of these and save yourself creating 99 actual email addresses.</li>
+        <li>Security - if you use an alias of an email for a service that is then hacked, that email won't be the same email you've used for other services, making it harder to hack you.</li>
+        <li>Privacy - using different emails make you harder to track.
+        </li>
+    </ul>
+    <h3>FAQs</h3>
+    <p class="Question">Q - Can I switch between 'googlemail.com' and 'gmail.com' to create an Alias?</p>
+    <p class="Answer">A - Yep, this gives you one alias, you can combine this with periods to effectively double your options. I might add this to the generator at some point</p>
+    <p class="Question">Q - Can't I just use a + and then add any text I like?</p>
+    <p class="Answer">A - Sometimes! This is easy to do, for example myemail+1@gmail.com myemail+2@gmail.com etc, but I have found that '+' is often not an allowed character in email signup forms, whereas '.' always is. Consecutive '.'s I don't think always work, so tend to stick to one '.'</p>
+    <p class="Question">Q - Are these alias' always unique?</p>
+    <p class="Answer">A - No, they're always random, but there is a chance of getting one you've had before (the longer the email the lower the chance)</p>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
